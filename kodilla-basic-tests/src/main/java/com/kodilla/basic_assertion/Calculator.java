@@ -1,13 +1,15 @@
 package com.kodilla.basic_assertion;
 
 public class Calculator {
-        public int sum(int a, int b){
+        public double sum(double a, int b){
             return a + b;
         }
-        public int substract(int a, int b){
+        public double substract(double a, int b){
             return a - b;
         }
-        public int power(int a, int b){
-            return (int) Math.pow(a,b);         // dlaczego ten zapis jes błędny: return Math.pow(a,b);
+        public double power(double a, double c){
+            return (double) Math.pow(a, c);         // dlaczego ten zapis jes błędny: return Math.pow(a,b);
+                                                    // -5^2=-25, (-5)^2=25
     }
+
 }
