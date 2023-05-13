@@ -12,21 +12,21 @@ public class Application {
         double substractResult = calculator.substract(a,b);
         double powerResult = calculator.power(a,c);
 
-        boolean sumCorrect = ResultChecker.assertEquals(3,sumResult);
+        boolean sumCorrect = ResultChecker.assertEquals(3,sumResult, 0.1);
         if (sumCorrect) {
             System.out.println("Wynik dodawania poprawny");
         }else{
             System.out.println("Wynik dodawania błędny");
         }
 
-        boolean substractCorrect = ResultChecker.assertEquals(-13,substractResult);
+        boolean substractCorrect = ResultChecker.assertEquals(-13,substractResult, 0.1);
         if (substractCorrect) {
             System.out.println("Wynik odejmowania poprawny");
         }else{
             System.out.println("Wynik odejmowania błędny");
         }
 
-        boolean powerCorrect = ResultChecker.assertEquals(-25.0,powerResult);
+        boolean powerCorrect = ResultChecker.assertEquals(-25.0,powerResult, 0.1);
         if (powerCorrect) {
             System.out.println("Wynik potęgowania poprawny");
         }else{
