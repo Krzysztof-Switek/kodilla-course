@@ -11,15 +11,15 @@ public class Person {
 
         System.out.println("First name: "  + firstName + "\nAge:" + age+ "\nJob: " + job);
 
-        if (job == "Project manager") {
+        if (job.equals("Project manager")) {
                         System.out.println("Responsibilities: " + projectManager.responsibilities());
             System.out.println("Salary:"+ projectManager.salary());
 
-        } else if (job == "Scrum master") {
+        } else if (job.equals("Scrum master")) {
             System.out.println("Responsibilities: " + scrumMaster.responsibilities());
             System.out.println("Salary: "+ scrumMaster.salary());
 
-        }else if (job == "Java developer") {
+        }else if (job.equals("Java developer")) {
             System.out.println("Responsibilities: " + javadeveloper.responsibilities());
             System.out.println("Salary: "+ javadeveloper.salary());
 
