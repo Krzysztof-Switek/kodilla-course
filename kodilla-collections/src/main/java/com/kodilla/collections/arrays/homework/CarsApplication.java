@@ -1,6 +1,4 @@
 package com.kodilla.collections.arrays.homework;
-import com.kodilla.collections.arrays.homework.CarUtils;
-import com.kodilla.collections.arrays.homework.Car;
 
 import java.util.Random;
 
