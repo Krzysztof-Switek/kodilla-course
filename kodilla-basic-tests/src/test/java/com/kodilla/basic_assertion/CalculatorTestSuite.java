@@ -27,10 +27,10 @@ public class CalculatorTestSuite {
     @Test
     public void testPower() {
         Calculator calculator = new Calculator();
-        double a = -2;
-        double c = 2;
+        double a = -5;
+        double c = 4;
         double powerResult = calculator.power(a, c);
-        assertEquals(-4, powerResult, 2);
+        assertEquals(-4, powerResult, 0.01);
     }
 
 

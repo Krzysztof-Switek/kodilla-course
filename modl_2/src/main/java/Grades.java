@@ -10,10 +10,11 @@ public class Grades {
         grades.addGrade(4);
         grades.addGrade(3);
         grades.addGrade(1);
-        grades.addGrade(4);
+        grades.addGrade(5);
 
         System.out.println("Last added grade: " + grades.getLastAdded());
         System.out.println("Grade's average: " + grades.getAverage());
+        System.out.println(grades);
     }
 
 

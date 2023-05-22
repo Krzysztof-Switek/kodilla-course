@@ -33,7 +33,7 @@ public class Notebook {
         że dane urządzenie jest lekkie, niezbyt ciężkie i bardzo ciężkie.
      */
     public void checkWeight() {
-        if (this.weight < 1000) {
+        if (this.weight <= 1000) {
             System.out.println("This notebook is very light.");
         } else if (this.weight > 1000 && this.weight <= 1500){
             System.out.println("This notebook is of normal weight.");
