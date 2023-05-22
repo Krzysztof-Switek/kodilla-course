@@ -15,3 +15,4 @@ public class Application {
    System.out.println("Trapezoid perimeter: " + trapezoid.calcPerimeter());
     }
 }
+
