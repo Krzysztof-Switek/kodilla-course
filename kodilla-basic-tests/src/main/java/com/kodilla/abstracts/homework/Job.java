@@ -1,17 +1,28 @@
 package com.kodilla.abstracts.homework;
 
 public abstract class Job {
-    protected int salary;
-    protected String responsibilities;
+    private int salary;
+    private String responsibilities;
+    private String title;
 
-    public int salary() {
-        return salary();
+    public Job(int salary, String responsibilities, String title) {
+        this.salary = salary;
+        this.responsibilities = responsibilities;
+        this.title = title;
     }
-    public String responsibilities(){
-        return responsibilities();
+
+    public String getTitle() {
+        return title;
     }
 
+    public String getResponsibilities() {
+        return responsibilities;
+    }
 
+    public int getSalary() {
+        return salary;
+    }
 }
+
 
 

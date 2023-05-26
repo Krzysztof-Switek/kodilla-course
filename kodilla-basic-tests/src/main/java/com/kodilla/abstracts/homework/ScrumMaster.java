@@ -1,24 +1,14 @@
 package com.kodilla.abstracts.homework;
 
 public class ScrumMaster extends Job{
-    private final String responsibilities;
-    private final int salary;
+    private static final int SALARY = 6000;
+    private static final String RESPONSIBILITIES = "Scrum master responsibilities";
+    private static final String TITLE = "Scrum master";
 
-    public ScrumMaster(String responsibilities, int salary){
-        this.salary = salary();
-        this.responsibilities = responsibilities();
+    public ScrumMaster() {
+        super(SALARY, RESPONSIBILITIES, TITLE);
     }
-    @Override
-    public int salary() {
-        return 5000;
-    }
-
-    @Override
-    public String responsibilities() {
-        return "Keep the team organized, on track, and focused on what matters.";
-    }
-    }
-
+}
 
 
 
