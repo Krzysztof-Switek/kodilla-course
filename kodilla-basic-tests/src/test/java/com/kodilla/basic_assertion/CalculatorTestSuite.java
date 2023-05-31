@@ -15,7 +15,7 @@ public class CalculatorTestSuite {
         assertEquals(13, sumResult);
     }
 
-    @Test                           // powtarzanie kodu dla każdego przypadku jest konieczne?
+    @Test
     public void testSubstract() {
         Calculator calculator = new Calculator();
         int a = 10;
@@ -30,7 +30,7 @@ public class CalculatorTestSuite {
         double a = -5;
         double c = 4;
         double powerResult = calculator.power(a, c);
-        assertEquals(-4, powerResult, 0.01);
+        assertEquals(625, powerResult, 0.01);
     }
 
 
