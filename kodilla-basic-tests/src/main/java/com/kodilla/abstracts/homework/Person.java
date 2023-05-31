@@ -26,33 +26,18 @@ public class Person {
 
     public static void main(String[] args) {
         Person person = new Person("Andy", new JavaDeveloper(), 32);
+        person.jobDetails();
+    }
 
+    public void jobDetails() {
+        String jobTitle = job.getTitle();
+        String responsibilities = job.getResponsibilities();
+        double salary = job.getSalary();
 
-        Job projectManager = new ProjectManager();
-
-        Job scrumMaster = new ScrumMaster();
-
-        Job javaDeveloper = new JavaDeveloper();
-
-        if (person.getJob() instanceof ProjectManager) {
-            System.out.println("First name: " + person.getName() + "\nAge: " + person.getAge() + "\nJob: " + person.getJob().getTitle());
-            System.out.println("Responsibilities: " + person.getJob().getResponsibilities());
-            //System.out.println("Responsibilities: " + person.getJob().responsibilities());
-           // System.out.println("Salary: " + person.getJob().salary());
-            System.out.println("Salary: " + person.getJob().getSalary());
-
-        } else if (person.getJob() instanceof ScrumMaster) {
-            System.out.println("First name: " + person.getName() + "\nAge: " + person.getAge() + "\nJob: " + person.getJob().getTitle());
-            System.out.println("Responsibilities: " + person.getJob().getResponsibilities());
-            System.out.println("Salary: " + person.getJob().getSalary());
-
-        } else if (person.getJob() instanceof JavaDeveloper) {
-            System.out.println("First name: " + person.getName() + "\nAge: " + person.getAge() + "\nJob: " + person.getJob().getTitle());
-            System.out.println("Responsibilities: " + person.getJob().getResponsibilities());
-            System.out.println("Salary: " + person.getJob().getSalary());
-
-        } else {
-            System.out.println("Please choose a job from the list:\n'Project manager'\n'Scrum master'\n'Java developer'");
-        }
+        System.out.println("First name: " + getName());
+        System.out.println("Age: " + getAge());
+        System.out.println("Job: " + jobTitle);
+        System.out.println("Responsibilities: " + responsibilities);
+        System.out.println("Salary: " + salary);
     }
 }
