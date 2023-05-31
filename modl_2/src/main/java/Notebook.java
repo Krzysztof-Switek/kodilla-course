@@ -10,9 +10,7 @@ public class Notebook {
         this.year = year;
     }
 
-    // metoda klasy
-
-    /*  Zmodyfikuj metodę checkPrice w taki sposób, by sprawdzała kilka przedziałów cenowych:
+     /*  Zmodyfikuj metodę checkPrice w taki sposób, by sprawdzała kilka przedziałów cenowych:
         jeśli cena jest niższa od 600, wyświetl "This notebook is very cheap.",
         jeśli cena jest z przedziału 600-1000, wyświetl "The price is good.",
         jeśli cena jest wyższa od 1000, wyświetl "This notebook is expensive.".
