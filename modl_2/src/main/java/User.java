@@ -1,9 +1,8 @@
 import java.util.Random;
 public class User {
-       // constructor
 
-        String name;
-        int age;
+        private String name;
+        private int age;
 
         public User(String name, int age) {
             this.name = name;
@@ -41,12 +40,6 @@ public class User {
             }
         }
 
-/*
-Utwórz klasę RandomNumbers, w której będzie istnieć metoda losująca liczby z zakresu 0-30,
-tak długo, aż ich suma przekroczy 5000.
-Napisz dwie metody zwracające największą i najmniejszą wylosowaną wartość.
-*/
-
     public class RandomNumbers {
         private int sum;
         private int min;
@@ -81,9 +74,7 @@ Napisz dwie metody zwracające największą i najmniejszą wylosowaną wartość
             return this.min;
         }
     }
-
-
-    }
+}
 
 
 
