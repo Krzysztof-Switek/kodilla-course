@@ -1,10 +1,8 @@
 package com.kodilla.exeption.homework;
 
-import com.kodilla.exeption.AirportNotFoundExeption;
-import com.kodilla.exeption.AirportRepository;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class WarehouseTestSuite {
     @Test
@@ -29,7 +27,7 @@ class WarehouseTestSuite {
         //when
         //then
         assertThrows(OrderDoesNotExistException.class, () ->
-                warehouse.getOrder  ("OR789"));
+                warehouse.getOrder("OR789"));
     }
 }
 
