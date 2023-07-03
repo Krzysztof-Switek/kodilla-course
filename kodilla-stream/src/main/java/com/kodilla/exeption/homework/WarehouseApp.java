@@ -12,14 +12,15 @@ public class WarehouseApp {
             Order foundOrder = warehouse.getOrder("OR123");
             System.out.println("Order: " + foundOrder.getNumber() + " exists");
         } catch (OrderDoesNotExistException e) {
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());
         }
 
         try {
             Order notFoundOrder = warehouse.getOrder("OR789");
             System.out.println("Order: " + notFoundOrder.getNumber() + " exists");
         } catch (OrderDoesNotExistException e) {
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());
         }
     }
 }
+
