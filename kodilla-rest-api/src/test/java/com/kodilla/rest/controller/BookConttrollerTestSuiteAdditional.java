@@ -16,7 +16,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 
 @WebMvcTest(BookController.class)
-class BookControllerTest {
+class BookControllerTestSuiteAdditional {
 
     @MockBean
     private BookService bookService;
