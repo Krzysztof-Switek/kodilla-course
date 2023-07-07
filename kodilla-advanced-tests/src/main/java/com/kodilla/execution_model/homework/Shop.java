@@ -96,3 +96,5 @@ public class Shop {
         System.out.println("Total order value: " + totalOrderValue);
     }
 }
+
+
