@@ -10,4 +10,4 @@ Feature:  Is it Summer? Everybody likes Summer
   Scenario: Summer i Summer
     Given today is first day of August 
     When I ask whether it's Summer
-    Then I should be told "Yes! Summer"
+    Then I should be told "Yes! Summer!"
