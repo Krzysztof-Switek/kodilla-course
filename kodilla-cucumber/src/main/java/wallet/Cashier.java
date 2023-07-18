@@ -11,3 +11,4 @@ public class Cashier {
         cashSlot.dispense(amount);
     }
 }
+
